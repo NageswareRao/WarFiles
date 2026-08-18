@@ -1,0 +1,16 @@
+2026-08-18T12:32:55.670Z ERROR 430415 --- [0.0-8080-exec-8] o.s.b.w.servlet.support.ErrorPageFilter  : Forwarding to error page from re
+quest [/Assessment/report/UK5JST] due to exception [404 Not Found: "<EOL><EOL><EOL><EOL><EOL><EOL><!DOCTYPE HTML PUBLIC "-//W3C//DTD HT
+ML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><EOL><EOL><html><EOL><EOL>?<head><EOL><EOL>??<title>iRecuit</title><EO
+L><EOL>??<EOL><EOL>??<link href="/irecruit_assessment/css/base.css" type="text/css" rel="stylesheet" /><EOL><EOL>??<script type="text/j
+avascript"><EOL><EOL>??   if(window.history.forward(1)!=null) <EOL><EOL>?       {<EOL><EOL>?         window.history.forward(1);<EOL><EO
+L>?       }<EOL><EOL>??   function hov(loc,cls) <EOL><EOL>??   {   <EOL><EOL>??     if(loc.className)<EOL><EOL>??     {   <EOL><EOL>?? 
+     loc.className=cls;<EOL><EOL>??     }   <EOL><EOL>??   }   <EOL><EOL>??</script><EOL><EOL>?</head><EOL><EOL>?<body topmargin="0" ri
+ghtmargin="0" leftmargin="0"> <EOL><EOL>? <EOL><EOL>?<EOL><EOL>?<EOL><EOL><EOL><EOL><!------------------------------ CODE START HERE --
+-------------------- --><EOL><EOL>?<BR><BR><BR><BR><BR><BR><EOL><EOL>??<table width="100%"><EOL><EOL>???<tr><EOL><EOL>????<td><EOL><EOL
+>?????<table align="center" width="450" height="100%" border="0" bordercolor="#FFFFFF" cellpadding="0" cellspacing="0"><EOL><EOL>???   
+           <tr align="left" valign="middle"> <EOL><EOL>???                <td height="25" valign="top" align="center" class="versmallwh
+ite" ><FONT face="verdana" SIZE="2" COLOR="#000000"><B><p align="center"><BR><BR>????<EOL><EOL>????????Invalid URL<EOL><EOL>????????</p
+><BR><BR><input type="button" value="Close" class="btn" onmouseover="hov(this,'btn btnhov')" onmouseout="hov(this,'btn')" onclick="java
+script:window.close();"><EOL><EOL>????????<BR><BR></B></FONT><EOL><EOL>???????</td><EOL><EOL>???              </tr>     <EOL><EOL>??   
+         </table> <EOL><EOL>????</td><EOL><EOL>???</tr><EOL><EOL>??</table><EOL><EOL>?<BR><BR><BR><BR><BR><BR><EOL><EOL><!-------------
+----------------- CODE END HERE ---------------------- --><EOL><EOL><EOL><EOL>?<EOL><EOL>?</body><EOL><EOL></html><EOL><EOL>"]
