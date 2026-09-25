@@ -1,0 +1,476 @@
+{
+  "info": {
+    "_postman_id": "9bf21fd0-e326-402d-992a-01001dc3b9e4",
+    "name": "LSD",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "32533741"
+  },
+  "item": [
+    {
+      "name": "getUserReportMapping",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://uat.msildatavision.co.in/api/report/getUserReportMapping/concentrix_nveerla",
+          "protocol": "https",
+          "host": [
+            "uat",
+            "msildatavision",
+            "co",
+            "in"
+          ],
+          "path": [
+            "api",
+            "report",
+            "getUserReportMapping",
+            "concentrix_nveerla"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getReports",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://uat.msildatavision.co.in/api/report/getReports/RP36/reportname",
+          "protocol": "https",
+          "host": [
+            "uat",
+            "msildatavision",
+            "co",
+            "in"
+          ],
+          "path": [
+            "api",
+            "report",
+            "getReports",
+            "RP36",
+            "reportname"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getDemographicDetails",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://uat.msildatavision.co.in/api/report/getDemographicDetails/concentrix_nveerla",
+          "protocol": "https",
+          "host": [
+            "uat",
+            "msildatavision",
+            "co",
+            "in"
+          ],
+          "path": [
+            "api",
+            "report",
+            "getDemographicDetails",
+            "concentrix_nveerla"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getVahanStateMetrics",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"state\":[\"Delhi\",\"Haryana\",\"Uttar Pradesh\",\"Rajasthan\",\"Madhya Pradesh\",\"Andaman & Nicobar Island\",\"Sikkim\",\"West Bengal\",\"Bihar\",\"Jharkhand\",\"Arunachal Pradesh\",\"Assam\",\"Manipur\",\"Meghalaya\",\"Mizoram\",\"Nagaland\",\"Tripura\",\"Uttar Pradesh\",\"Uttarakhand\",\"Chandigarh\",\"Haryana\",\"Himachal Pradesh\",\"Jammu and Kashmir\",\"Ladakh\",\"Punjab\",\"Uttar Pradesh\",\"Haryana\",\"Himachal Pradesh\",\"Puducherry\",\"Tamil Nadu\",\"Karnataka\",\"Kerala\",\"Lakshadweep\",\"Andhra Pradesh\",\"Puducherry\",\"Telangana\",\"Chhattisgarh\",\"Odisha\",\"Goa\",\"Maharashtra\",\"Maharashtra\",\"Gujarat\",\"UT of DNH and DD\"],\"zone\":[\"Central\",\"East\",\"North\",\"South\",\"South East\",\"West\"],\"region\":[\"Central 1\",\"Central 2\",\"Central 3\",\"Central 4\",\"East 1\",\"East 2\",\"East 3\",\"North 1\",\"North 2\",\"North 3\",\"North 4\",\"South 1\",\"South 2\",\"South 3\",\"South East 1\",\"South East 2\",\"West 1\",\"West 2\",\"West 3\"],\"value\":\"YEAR\",\"year\":\"2026\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://uat.msildatavision.co.in/api/report/vaahanReport/getVahanStateMetrics",
+          "protocol": "https",
+          "host": [
+            "uat",
+            "msildatavision",
+            "co",
+            "in"
+          ],
+          "path": [
+            "api",
+            "report",
+            "vaahanReport",
+            "getVahanStateMetrics"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getVahanRegionMetrics",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"state\":[\"Andaman & Nicobar Island\",\"Andhra Pradesh\",\"Arunachal Pradesh\",\"Assam\",\"Bihar\",\"Chandigarh\",\"Chhattisgarh\",\"Delhi\",\"Goa\",\"Gujarat\",\"Haryana\",\"Himachal Pradesh\",\"Jammu and Kashmir\",\"Jharkhand\",\"Karnataka\",\"Kerala\",\"Ladakh\",\"Lakshadweep\",\"Madhya Pradesh\",\"Maharashtra\",\"Manipur\",\"Meghalaya\",\"Mizoram\",\"Nagaland\",\"Odisha\",\"Puducherry\",\"Punjab\",\"Rajasthan\",\"Sikkim\",\"Tamil Nadu\",\"Telangana\",\"Tripura\",\"UT of DNH and DD\",\"Uttar Pradesh\",\"Uttarakhand\",\"West Bengal\"],\"zone\":[\"Central\",\"East\",\"North\",\"South\",\"South East\",\"West\"],\"region\":[\"Central 1\",\"Central 2\",\"Central 3\",\"Central 4\",\"East 1\",\"East 2\",\"East 3\",\"North 1\",\"North 2\",\"North 3\",\"North 4\",\"South 1\",\"South 2\",\"South 3\",\"South East 1\",\"South East 2\",\"West 1\",\"West 2\",\"West 3\"],\"value\":\"AUG\",\"year\":\"2026\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://uat.msildatavision.co.in/api/report/vaahanReport/getVahanRegionMetrics",
+          "protocol": "https",
+          "host": [
+            "uat",
+            "msildatavision",
+            "co",
+            "in"
+          ],
+          "path": [
+            "api",
+            "report",
+            "vaahanReport",
+            "getVahanRegionMetrics"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getOemWiseData",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"state\":[\"Delhi\",\"Haryana\",\"Uttar Pradesh\",\"Rajasthan\",\"Madhya Pradesh\",\"Andaman & Nicobar Island\",\"Sikkim\",\"West Bengal\",\"Bihar\",\"Jharkhand\",\"Arunachal Pradesh\",\"Assam\",\"Manipur\",\"Meghalaya\",\"Mizoram\",\"Nagaland\",\"Tripura\",\"Uttar Pradesh\",\"Uttarakhand\",\"Chandigarh\",\"Haryana\",\"Himachal Pradesh\",\"Jammu and Kashmir\",\"Ladakh\",\"Punjab\",\"Uttar Pradesh\",\"Haryana\",\"Himachal Pradesh\",\"Puducherry\",\"Tamil Nadu\",\"Karnataka\",\"Kerala\",\"Lakshadweep\",\"Andhra Pradesh\",\"Puducherry\",\"Telangana\",\"Chhattisgarh\",\"Odisha\",\"Goa\",\"Maharashtra\",\"Maharashtra\",\"Gujarat\",\"UT of DNH and DD\"],\"zone\":[\"Central\",\"East\",\"North\",\"South\",\"South East\",\"West\"],\"region\":[\"Central 1\",\"Central 2\",\"Central 3\",\"Central 4\",\"East 1\",\"East 2\",\"East 3\",\"North 1\",\"North 2\",\"North 3\",\"North 4\",\"South 1\",\"South 2\",\"South 3\",\"South East 1\",\"South East 2\",\"West 1\",\"West 2\",\"West 3\"],\"value\":\"YEAR\",\"year\":\"2026\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://uat.msildatavision.co.in/api/report/vaahanReport/getOemWiseData",
+          "protocol": "https",
+          "host": [
+            "uat",
+            "msildatavision",
+            "co",
+            "in"
+          ],
+          "path": [
+            "api",
+            "report",
+            "vaahanReport",
+            "getOemWiseData"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getFuelWiseData",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"state\":[\"Andaman & Nicobar Island\",\"Andhra Pradesh\",\"Arunachal Pradesh\",\"Assam\",\"Bihar\",\"Chandigarh\",\"Chhattisgarh\",\"Delhi\",\"Goa\",\"Gujarat\",\"Haryana\",\"Himachal Pradesh\",\"Jammu and Kashmir\",\"Jharkhand\",\"Karnataka\",\"Kerala\",\"Ladakh\",\"Lakshadweep\",\"Madhya Pradesh\",\"Maharashtra\",\"Manipur\",\"Meghalaya\",\"Mizoram\",\"Nagaland\",\"Odisha\",\"Puducherry\",\"Punjab\",\"Rajasthan\",\"Sikkim\",\"Tamil Nadu\",\"Telangana\",\"Tripura\",\"UT of DNH and DD\",\"Uttar Pradesh\",\"Uttarakhand\",\"West Bengal\"],\"zone\":[\"Central\",\"East\",\"North\",\"South\",\"South East\",\"West\"],\"region\":[\"Central 1\",\"Central 2\",\"Central 3\",\"Central 4\",\"East 1\",\"East 2\",\"East 3\",\"North 1\",\"North 2\",\"North 3\",\"North 4\",\"South 1\",\"South 2\",\"South 3\",\"South East 1\",\"South East 2\",\"West 1\",\"West 2\",\"West 3\"],\"value\":\"AUG\",\"year\":\"2026\",\"previousYear\":\"2025\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://uat.msildatavision.co.in/api/report/vaahanReport/getFuelWiseData",
+          "protocol": "https",
+          "host": [
+            "uat",
+            "msildatavision",
+            "co",
+            "in"
+          ],
+          "path": [
+            "api",
+            "report",
+            "vaahanReport",
+            "getFuelWiseData"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getMSTrendData",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"state\":[\"Andaman & Nicobar Island\",\"Andhra Pradesh\",\"Arunachal Pradesh\",\"Assam\",\"Bihar\",\"Chandigarh\",\"Chhattisgarh\",\"Delhi\",\"Goa\",\"Gujarat\",\"Haryana\",\"Himachal Pradesh\",\"Jammu and Kashmir\",\"Jharkhand\",\"Karnataka\",\"Kerala\",\"Ladakh\",\"Lakshadweep\",\"Madhya Pradesh\",\"Maharashtra\",\"Manipur\",\"Meghalaya\",\"Mizoram\",\"Nagaland\",\"Odisha\",\"Puducherry\",\"Punjab\",\"Rajasthan\",\"Sikkim\",\"Tamil Nadu\",\"Tripura\",\"UT of DNH and DD\",\"Uttar Pradesh\",\"Uttarakhand\",\"West Bengal\"],\"zone\":[\"Central\",\"East\",\"North\",\"South\",\"South East\",\"West\"],\"region\":[\"Central 1\",\"Central 2\",\"Central 3\",\"Central 4\",\"East 1\",\"East 2\",\"East 3\",\"North 1\",\"North 2\",\"North 3\",\"North 4\",\"South 1\",\"South 2\",\"South 3\",\"South East 1\",\"South East 2\",\"West 1\",\"West 2\",\"West 3\"],\"value\":\"Q2\",\"year\":\"2026\",\"previousYear\":\"2025\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://uat.msildatavision.co.in/api/report/vaahanReport/getMSTrendData",
+          "protocol": "https",
+          "host": [
+            "uat",
+            "msildatavision",
+            "co",
+            "in"
+          ],
+          "path": [
+            "api",
+            "report",
+            "vaahanReport",
+            "getMSTrendData"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getReports",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://uat.msildatavision.co.in/api/admin/getReports",
+          "protocol": "https",
+          "host": [
+            "uat",
+            "msildatavision",
+            "co",
+            "in"
+          ],
+          "path": [
+            "api",
+            "admin",
+            "getReports"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getRoles",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://uat.msildatavision.co.in/api/admin/getRoles",
+          "protocol": "https",
+          "host": [
+            "uat",
+            "msildatavision",
+            "co",
+            "in"
+          ],
+          "path": [
+            "api",
+            "admin",
+            "getRoles"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "updateReportMapping",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"reportIds\":[\"RP1\"],\r\n    \"roleIds\":[\"HO-TOPMGMT\"],\r\n    \"emailIds\":[\"concentrix_nveerla\"],\r\n    \"transition\":15,\r\n    \"mode\":\"SLIDESHOW\",\r\n    \"deletedReportIds\":[]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://uat.msildatavision.co.in/api/admin/updateReportMapping",
+          "protocol": "https",
+          "host": [
+            "uat",
+            "msildatavision",
+            "co",
+            "in"
+          ],
+          "path": [
+            "api",
+            "admin",
+            "updateReportMapping"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "assignReports",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[{\"reportIds\":[\"RP1\"],\"roleId\":[\"RM\"],\"emailId\":null,\"transition\":15,\"mode\":\"SLIDESHOW\"}]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://uat.msildatavision.co.in/api/admin/assignReports",
+          "protocol": "https",
+          "host": [
+            "uat",
+            "msildatavision",
+            "co",
+            "in"
+          ],
+          "path": [
+            "api",
+            "admin",
+            "assignReports"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deleteReportMapping",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"roleId\":[\"HO-TOPMGMT\"],\r\n    \"email\":[\"test@gmail.com\"]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://uat.msildatavision.co.in/api/admin/deleteReportMapping",
+          "protocol": "https",
+          "host": [
+            "uat",
+            "msildatavision",
+            "co",
+            "in"
+          ],
+          "path": [
+            "api",
+            "admin",
+            "deleteReportMapping"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "fetchRoleReport",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://uat.msildatavision.co.in/api/admin/fetchRoleReport",
+          "protocol": "https",
+          "host": [
+            "uat",
+            "msildatavision",
+            "co",
+            "in"
+          ],
+          "path": [
+            "api",
+            "admin",
+            "fetchRoleReport"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "fetchUnmappedRTO",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "fetchZoneRegionRTO",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://uat.msildatavision.co.in/api/admin/fetchZoneRegionRTO",
+          "protocol": "https",
+          "host": [
+            "uat",
+            "msildatavision",
+            "co",
+            "in"
+          ],
+          "path": [
+            "api",
+            "admin",
+            "fetchZoneRegionRTO"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "saveMissingRto",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"rtoRemarks\": \"string\",\r\n  \"rtoNumber\": \"string\",\r\n  \"parentRto\": \"string\",\r\n  \"state\": \"string\",\r\n  \"rto\": [\"string\"],\r\n  \"rtoName\": \"string\",\r\n  \"rtoNumberDup\": \"string\",\r\n  \"region\": \"string\",\r\n  \"zone\": \"string\",\r\n  \"areaOffice\": \"string\",\r\n  \"msilDistrict\": \"string\",\r\n  \"city\": \"string\",\r\n  \"cityGroup\": \"string\",\r\n  \"stateCode\": \"string\",\r\n  \"ro\": \"string\",\r\n  \"remarks1\": \"string\",\r\n  \"remarks2\": \"string\",\r\n  \"cleanedRto\": \"string\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://uat.msildatavision.co.in/api/admin/saveMissingRto",
+          "protocol": "https",
+          "host": [
+            "uat",
+            "msildatavision",
+            "co",
+            "in"
+          ],
+          "path": [
+            "api",
+            "admin",
+            "saveMissingRto"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
