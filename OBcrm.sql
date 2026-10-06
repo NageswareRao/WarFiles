@@ -1,0 +1,10 @@
+SELECT sjl.*
+FROM msil_dps.sync_job_log sjl
+WHERE job_name = 'job_postgreSQL_to_campaign_wise_automailer_csv'
+  AND EXTRACT(
+        EPOCH FROM (
+            (NOW() + INTERVAL '5 hours 30 minutes') - job_start_time
+        )
+      ) < 86400
+ORDER BY job_start_time DESC
+LIMIT 1;
