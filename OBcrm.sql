@@ -8,3 +8,10 @@ WHERE job_name = 'job_postgreSQL_to_campaign_wise_automailer_csv'
       ) < 86400
 ORDER BY job_start_time DESC
 LIMIT 1;
+
+SELECT sjl.*
+FROM msil_dps.sync_job_log sjl
+WHERE job_name = 'job_postgreSQL_to_campaign_wise_automailer_csv'
+  AND job_start_time >= '2026-09-03 00:00:00'
+  AND job_start_time <  '2026-09-04 00:00:00'
+ORDER BY job_start_time DESC;
