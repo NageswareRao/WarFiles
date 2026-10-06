@@ -1,3 +1,5 @@
+jr_864cfaa95a8fddae42a24a25e8ee75ca1f13d73d37a409115c0d4a39279004fe
+
 SELECT sjl.*
 FROM msil_dps.sync_job_log sjl
 WHERE job_name = 'job_postgreSQL_to_campaign_wise_automailer_csv'
