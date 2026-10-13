@@ -1,1 +1,39 @@
 
+{
+  queryPlanner: {
+    plannerVersion: 1,
+    namespace: 'mos-db.mos_cases',
+    winningPlan: {
+      stage: 'SUBSCAN',
+      inputStage: {
+        stage: 'IXSCAN',
+        indexName: 'createdAtDB',
+        direction: 'backward'
+      }
+    }
+  },
+  executionStats: {
+    executionSuccess: true,
+    executionTimeMillis: '31350.653',
+    planningTimeMillis: '0.311',
+    executionStages: {
+      stage: 'SUBSCAN',
+      nReturned: '2',
+      executionTimeMillisEstimate: '31350.312',
+      inputStage: {
+        stage: 'IXSCAN',
+        nReturned: '2',
+        executionTimeMillisEstimate: '31350.306',
+        indexName: 'createdAtDB',
+        direction: 'backward'
+      }
+    }
+  },
+  serverInfo: {
+    host: 'inbound-crm-prod-docdb',
+    port: 27017,
+    version: '5.0.0'
+  },
+  ok: 1,
+  operationTime: Timestamp({ t: 1791885968, i: 1 })
+}
