@@ -34,3 +34,28 @@ db.mos_cases.find(
     }
   }
 ).sort({ 'createdAtDB': -1 })
+
+
+{
+  "crmCaseStatus": {
+    "$in": [
+      "Pending for Allocation",
+      "Pending for Out for Service",
+      "Out for Service",
+      "Reached",
+      "Technician Cancelled",
+      "Towing Required",
+      "Towing is Required",
+      "Closed",
+      "Resolved",
+      "Customer Cancelled",
+      "Can't Rectify",
+      "Resolved on call",
+      "Towing Cancelled"
+    ]
+  },
+  "vehicleInfo.vehicleRegNo": {
+    "$regex": "KA53MQ4085",
+    "$options": "i"
+  }
+}
