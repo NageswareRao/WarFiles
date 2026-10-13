@@ -3,3 +3,7 @@ SELECT * FROM case_management.login_history WHERE cognito_id = 'cop-crm-ad_81113
 db.mos_cases.countDocuments({
   'vehicleInfo.vehicleRegNo': {$regex: "KA53MQ4085", $options: 'i'}
 })
+
+db.mos_cases.find({
+  'vehicleInfo.vehicleRegNo': 'KA53MQ4085'
+})
