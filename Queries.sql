@@ -1,3 +1,10 @@
+https://jenkins.msildevopsportal.co.in/job/INBOUND-CRM/job/Platform/
+  
+
+https://jenkins.msildevopsportal.co.in/job/INBOUND-CRM/job/Production/job/backend/job/lz-msil-crm-inbound-email-management-service-prod-pipeline/
+  https://jenkins.msildevopsportal.co.in/job/INBOUND-CRM/job/Production/job/backend/job/lz-msil-crm-inbound-prospect-management-service-prod-pipeline/
+  https://jenkins.msildevopsportal.co.in/job/INBOUND-CRM/job/Production/job/backend/job/lz-msil-crm-inbound-mos-management-service-prod-pipeline/
+  
 SELECT * FROM case_management.login_history WHERE cognito_id = 'cop-crm-ad_81113664@maruticrm.onmicrosoft.com' ORDER BY login_time DESC
 
 db.mos_cases.countDocuments({
