@@ -15,7 +15,38 @@ SELECT
     END as sync_status
 FROM msil_dps.crm_dps_master_data
 WHERE survey_taker_crmid IN ('ST-000000099864598','ST-000000099875938','ST-000000099875413','ST-000000099877782','ST-000000099866002','ST-000000099877490','ST-000000099869499','ST-000000099871818','ST-000000099871270','ST-000000099866537','ST-000000099867834','ST-000000099869488','ST-000000099876398','ST-000000099870575','ST-000000099877909','ST-000000099879645','ST-000000099866391','ST-000000099868008');
+-- Check if campaign exists and has records
+SELECT 
+    campaign_crm_id,
+    COUNT(*) as total_records,
+    COUNT(CASE WHEN current_state IS NULL THEN 1 END) as pending_records,
+    MIN(created_datetime) as oldest_created,
+    MAX(modified_date) as latest_modified
+FROM msil_dps.crm_dps_master_data
+WHERE campaign_crm_id = 'CMP-0000000001'
+GROUP BY campaign_crm_id;
 
+-- Check if any records from this campaign are already synced (current_state = COMPLETED)
+SELECT 
+    campaign_crm_id,
+    current_state,
+    COUNT(*) as count
+FROM msil_dps.crm_dps_master_data
+WHERE campaign_crm_id = 'CMP-0000000001'
+GROUP BY campaign_crm_id, current_state;
+
+-- Check if sync job ran recently
+SELECT 
+    job_name,
+    job_start_time,
+    job_end_time,
+    sync_status,
+    created_count,
+    total_count
+FROM msil_dps.sync_job_log
+WHERE table_name = 'msil_dps.crm_dps_master_data'
+  AND job_start_time >= NOW() - INTERVAL '3 days'
+ORDER BY job_start_time DESC;
 
 
 SELECT sjl.*
