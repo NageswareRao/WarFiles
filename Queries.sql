@@ -1,5 +1,13 @@
 https://jenkins.msildevopsportal.co.in/job/INBOUND-CRM/job/Platform/
   
+SELECT * FROM master.master_escalation_matrix where 
+case_sub_type_id =1 and 
+lob_id =2 and 
+master_escalation_matrix.device_type_id is null and 
+case_type_id = 2 and 
+sla_age = 4 and 
+channel_id = 2 and 
+level_order is null;
 
 https://jenkins.msildevopsportal.co.in/job/INBOUND-CRM/job/Production/job/backend/job/lz-msil-crm-inbound-email-management-service-prod-pipeline/
   https://jenkins.msildevopsportal.co.in/job/INBOUND-CRM/job/Production/job/backend/job/lz-msil-crm-inbound-prospect-management-service-prod-pipeline/
