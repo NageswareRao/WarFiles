@@ -15,7 +15,7 @@ WHERE agm.id IN (
 );
 
 
-
+'common:ib:module:email','common:ib:menu:email:inbox','common:ib:menu:email:sent','common:ib:menu:email:junk','common:ib:menu:inbox','common:ib:menu:sent','common:ib:menu:junk','common:ib:menu:email-care','common:ib:menu:agent-availability','common:ib:menu:performance-tracking','common:ib:menu:configuration:sla-config','common:ib:email:sla-config:sla-log','common:ib:email:template','common:ib:email:email-interaction','common:ib:contacts:360contact:email-interaction','common:ib:menu:contacts','common:ib:menu:cases','common:ib:cases:add-edit'
 
 
 common:ib:module:email
